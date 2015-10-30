@@ -1,0 +1,84 @@
+\documentclass{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+
+\title[\small{Kac-Moody groups and Cluster Algebras}]
+  {AIM SQuaRE Proposal\\ 
+  \small{Kac-Moody groups and Cluster Algebras}}
+
+\begin{document}
+  \maketitle
+  
+  \section*{Overview}
+    The goal of this AIM SQuaRE Proposal is to complete a project started at the AMS Mathematics Research Community on Cluster Algebras in June 2014.
+    Our aim is to realize acyclic cluster algebras with principal coefficients as the ring of coordinates of a reduced double Bruhat cell in the corresponding Kac-Moody group and to describe at least some of the cluster variables in terms of generalized minors.
+    
+  \subsection*{Participants}
+    The participants to the meeting will be 
+    \begin{itemize}
+      \item Dylan Rupel (Postdoctoral Teaching Associate, Northeastern University)
+      \item Salvatore Stella, INdAM-marie Curie fellow, Università di Roma ``La Sapienza''
+      \item Harold Williams (RTG Postdoctoral Instructor, University of Texas at Austin) 
+    \end{itemize}
+  
+  \section*{Project description}
+
+  The main object of study in this project are cluster algebras; these are a class of commutative algebras introduced by Fomin and Zelevinsky as a tool to understand Lusztig's dual canonical bases and  defined via a recursive procedure called mutation. 
+  These mutations produce, at the same time, the generators of the algebra (the ``cluster variables'') and the relations among them (the ``exchange relations'').
+  The combinatorial backbone of this process can be encoded by a (valued) quiver and many features of the resulting algebras can be read directly from this datum.
+  For example cluster algebras can be classified in terms of their ``growth'' rate and the class they belong to depends only on this quiver.
+  Incidentally this classification is extremely close to the classification of semisimple Lie algebras and groups by Cartan matrices and Dynkin diagrams. 
+
+  Even though, at a first glance, their definition might look quite technical cluster algebras appear naturally as the ring of coordinates of many notable varieties. 
+  One of the earliest families of examples, indeed, came from the work of Berenstein Fomin and Zelevinsky; they realized that the ring of coordinates of any double Bruhat cell of a Lie group $G$ carries a cluster algebra structure. 
+  Unfortunately the type of the algebras constructed in this way, in general, will not be related to the type of $G$. 
+
+  Motivated by this mismatch Yang and Zelevinsky realized that among all the double Bruhat cells of $G$ there is a notable subset that give rise to algebras of the same type of $G$. 
+  More precisely, for each valued quiver $Q$ whose underlying graph is a Dynkin graph of finite type they found a double Bruhat cell that has $Q$ as the initial quiver. 
+  Moreover and arguably more interestingly, after passing to a suitable subvariety, they were able to provide explicit formulas for all the cluster variables in terms of ``generalized minors'' (i.e. certain matrix coefficients of specific representations of $G$).
+
+  Based on our former works the initial goal we had was to extend the results of Yang and Zelevinsky to any Kac-Moody group $G$. 
+  In doing so we soon realized that the general case presents a level of complication not appearing in finite type.
+  The quickest way to explain it is to consider the representation theory of $Q$.
+  It is a well established fact, if $Q$ is acyclic, that there is a bijection (the Caldero Chapoton map) between the cluster variables in $\mathcal{A}(Q)$ and rigid indecomposable $Q$-modules. 
+  These, for a non finite type $Q$, come naturally in three families: preprojectives, postinjectives, and regulars.
+  We observed the same type of trichotomy at the level of generalized minors. 
+  Indeed cluster variables seem to appear as matrix coefficients of either highest weight, lowest weight or level zero representations of $G$.  
+  While the first two are well understood objects, less is known of level zero representations.
+  
+  At the moment, for any Kac-Moody group, using some Lewis Carroll type relations we have complete control on both preprojective and  postinjective cluster variables as functions on the appropriate reduced double Bruhat cell.
+  For affine types we also have a conjectural understanding of regular cluster variables again as matrix coefficients. 
+  During our previous meetings we were able to lay the general framework for our project and to prove completely the results we are after for affine type $A$. 
+
+  Our aim is now to complete the picture for the remaining affine types.
+  While in type $A$ it was sufficient to use the Weyl character formula to gain all the informations we need on the level zero representations at hand, more work is needed in the remaining types.
+  Indeed to apply our conjectural formulas we need to know the exact structure of the representations and not just the dimensions of their weight spaces. 
+  
+  The hope is to leverage cluster algebras to get new insights into the level zero representations of affine Kac-Moody groups. 
+  Indeed our construction suggests a deep interplay between representations of different kinds, since the exchange relations in the cluster algebra imply certain nontrivial relations between the characters of the corresponding representations.  
+  In particular, by relating level zero representations to both highest and lowest weight representations, we seek to gain a deeper understanding of the structure of the former. 
+  
+
+  \section*{Previous meetings}
+  \begin{itemize}
+    \item 
+      June 2014: MRC Cluster Algebras
+    \item
+      February 2015: NCSU University
+    \item
+      September 2015: Notre Dame University (Sponsored by AMS)
+  \end{itemize}
+
+  \begin{thebibliography}{XXX}
+    \bibitem{BFZ05}
+    A.~Berenstein and S.~Fomin and A.~Zelevinsky, Cluster algebras III: Upper bounds and double Bruhat cells, \textsl{Duke Math. J.} \textbf{126} (2005), no.~1, pp.~1--52.
+
+    \bibitem{Wil13}
+    H.~Williams, Cluster ensembles and Kac-Moody groups, \textsl{Adv. Math.}, \text{247}, (2013), pp.~1--40.
+
+    \bibitem{YZ08}
+    S.~Yang and A.~Zelevinsky, Cluster algebras of finite type via Coxeter elements and principal minors, \textsl{Transform. Groups}, \textbf{13} (2008), no.~3-4, pp.~855-895.
+    
+  \end{thebibliography}
+
+\end{document}
